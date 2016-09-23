@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>module2</title>
+    <link href="css/bootstrap_flatly.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <!-- just copy paste from bootstrap/components/navbar -->
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-dropdown" aria-expanded="false">
+                <!--data-toggle is  -->
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Food, LLC</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse text-center" id="main-navbar-dropdown">
+                <ul class="nav navbar-nav visible-xs">
+                    <li><a href="index.html#dom">DOM<span class="sr-only">(current)</span></a></li>
+                    <li><a href="index.html#ajax">AJAX</a></li>
+                    <li><a href="index.html#encaps">Encapsulation</a></li>
+                    <!--<li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>-->
+                </ul>
+                <!--<form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>-->
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <h1 class="text-center" id="our-menu"> Our menu</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-6">
+                <div class="column-content">
+                    <h3 class="text-center" id="dom">DOM</h3>
+                    <p>The World Wide Web Consortium (W3C), founded in 1994 to promote open standards for the World Wide Web, brought Netscape Communications and Microsoft together with other companies to develop a standard for browser scripting languages, called "ECMAScript." The first version of the standard was published in 1997. Subsequent releases of JavaScript and JScript would implement the ECMAScript standard for greater cross-browser compatibility. After the release of ECMAScript, W3C began working on a standardized DOM. The initial DOM standard, known as "DOM Level 1", was recommended by W3C in late 1998. About the same time, Internet Explorer 5.0 shipped with limited support for DOM Level 1. DOM Level 1 provided a complete model for an entire HTML or XML document, including means to change any portion of the document. Non-conformant browsers such as Internet Explorer 4.x and Netscape 4.x were still widely used as late as 2000. DOM Level 2 was published in late 2000. It introduced the getElementById function as well as an event model and support for XML namespaces and CSS. DOM Level 3, the current release of the DOM specification, published in April 2004, added support for XPath and keyboard event handling, as well as an interface for serializing documents as XML. DOM Level 4 is currently being developed. Last Call Working Draft was released in February 2014.[2] By 2005, large parts of W3C DOM were well-supported by common ECMAScript-enabled browsers, including Microsoft Internet Explorer version 6 (from 2001), Opera, Safari and Gecko-based browsers (like Mozilla, Firefox, SeaMonkey and Camino).</p>
+                    <ul>
+                    	<li>one</li>
+                    	<li>two</li>
+                    	<li>three</li>
+
+                    </ul>
+                    <a href="index.html#our-menu">Back to top</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-6">
+                <div class="column-content">
+                    <h3 class="text-center" id="ajax">AJAX</h3>
+                    <p>Any user whose browser does not support JavaScript or XMLHttpRequest, or has this functionality disabled, will not be able to properly use pages which depend on Ajax. Simple devices (such as smartphones and PDAs) may not support the required technologies. The only way to let the user carry out functionality is to fall back to non-JavaScript methods. This can be achieved by making sure links and forms can be resolved properly and not relying solely on Ajax.[15] Similarly, some Web applications that use Ajax are built in a way that cannot be read by screen-reading technologies, such as JAWS. The WAI-ARIA standards provide a way to provide hints in such a case.[16] Screen readers that are able to use Ajax may still not be able to properly read the dynamically generated content.[17] The same origin policy prevents some Ajax techniques from being used across domains,[10] although the W3C has a draft of the XMLHttpRequest object that would enable this functionality.[18] Methods exist to sidestep this security feature by using a special Cross Domain Communications channel embedded as an iframe within a page,[19] or by the use of JSONP. The asynchronous callback-style of programming required can lead to complex code that is hard to maintain, to debug[20] and to test.[21] Because of the asynchronous nature of Ajax, each chunk of data that is sent or received by the client occurs in a connection established specifically for that event. This creates a requirement that for every action, the client must poll the server, instead of listening, which incurs significant overhead. This overhead leads to several times higher latency with Ajax than what can be achieved with a technology such as websockets.[22] In pre-HTML5 browsers, pages dynamically created using successive Ajax requests did not automatically register themselves with the browser's history engine, so clicking the browser's "back" button may not have returned the browser to an earlier state of the Ajax-enabled page, but may have instead returned to the last full page visited before it. Such behavior — navigating between pages instead of navigating between page states — may be desirable, but if fine-grained tracking of page state is required, then a pre-HTML5 workaround was to use invisible iframes to trigger changes in the browser's history. A workaround implemented by Ajax techniques is to change the URL fragment identifier (the part of a URL after the "#") when an Ajax-enabled page is accessed and monitor it for changes.[23][24] HTML5 provides an extensive API standard for working with the browser's history engine.[25] Dynamic Web page updates also make it difficult to bookmark and return to a particular state of the application. Solutions to this problem exist, many of which again use the URL fragment identifier.[23][24] The solution provided by HTML5 for the above problem also applies for this.[25] Depending on the nature of the Ajax application, dynamic page updates may disrupt user interactions, particularly if the internet connection is slow or unreliable. For example, editing a search field may trigger a query to the server for search completions, but the user may not know that a search completion popup is forthcoming, and if the internet connection is slow, the popup list may show up at an inconvenient time, when the user has already proceeded to do something else. Excluding Google,[26] most major Web crawlers do not execute JavaScript code,[27] so in order to be indexed by search engines, a Web application must provide an alternative means of accessing the content that would normally be retrieved with Ajax. It has been suggested that a headless browser may be used to index content provided by Ajax-enabled websites, although Google is no longer recommending the Ajax crawling proposal they made back in 2009.[28]</p>
+                    <a href="index.html#our-menu">Back to top</a>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12">
+                <div class="column-content">
+                    <h3 class="text-center" id="encaps">Encapsulation</h3>
+                    <p>If a class disallows calling code from accessing internal object data and forces access through methods only, this is a strong form of abstraction or information hiding known as encapsulation. Some languages (Java, for example) let classes enforce access restrictions explicitly, for example denoting internal data with the private keyword and designating methods intended for use by code outside the class with the public keyword. Methods may also be designed public, private, or intermediate levels such as protected (which typically allows access from other objects of the same class, but not objects of a different class). In other languages (like Python) this is enforced only by convention (for example, naming "private" methods starting with an underscore). This is useful because it prevents the external code from being concerned with the internal workings of an object. This facilitates code refactoring, for example allowing the author of the class to change how objects of that class represent their data internally without changing any external code (as long as "public" method calls work the same way). It also encourages programmers to put all the code that is concerned with a certain set of data in the same class, which organizes it for easy comprehension by other programmers. Encapsulation is often used as a technique for encouraging decoupling. </p>
+                    <a href="index.html#our-menu">Back to top</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

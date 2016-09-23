@@ -1,0 +1,45 @@
+p {
+    /*height: 700px;*/
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.column-content {
+    padding: 2px 15px 10px 15px;
+    background-color: grey;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.navbar-collapse li {
+    background-color: #666699;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+.navbar-collapse ul:nth-child(1) {
+    border-top: 2px solid black;
+}
+
+
+
+a {
+    color: #131339;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #131339;
+    background-color: #fff;
+}
+
+/*just experimenting*/
+#main-navbar-dropdown .navbar-nav li:hover {
+    
+    background-color: grey;
+}
+
+#main-navbar-dropdown .navbar-nav li>a:hover{
+    color:#fff;
+}
